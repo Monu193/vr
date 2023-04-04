@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>❤️my page❤️</title>
+  <style>
+    body {
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      padding-top: 50px;
+    }
+
+    *,
+    *:before,
+    *:after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    .strain {
+      width: 155px;
+      height: 1px;
+      background-color: #dbdbdb;
+      position: relative;
+      margin: 0px auto;
+      margin-top: 28px;
+      margin-bottom: 28px;
+      -webkit-animation-name: rotate-strain;
+      animation-name: rotate-strain;
+      -webkit-animation-duration: 1.7s;
+      animation-duration: 1.7s;
+      -webkit-animation-timing-function: linear;
+      animation-timing-function: linear;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+      -webkit-animation-play-state: running;
+      animation-play-state: running;
+    }
+
+    .strain:before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background-color: #7ae213;
+      left: 0;
+      margin-top: -9px;
+      margin-left: -9px;
+      -webkit-animation-name: strain-size-left;
+      animation-name: strain-size-left;
+      -webkit-animation-duration: 1.7s;
+      animation-duration: 1.7s;
+      -webkit-animation-timing-function: linear;
+      animation-timing-function: linear;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+      -webkit-animation-play-state: running;
+      animation-play-state: running;
+    }
+
+    .strain:after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background-color: #e21313;
+      right: 0;
+      margin-top: -9px;
+      margin-right: -9px;
+      -webkit-animation-name: strain-size-right;
+      animation-name: strain-size-right;
+      -webkit-animation-duration: 1.7s;
+      animation-duration: 1.7s;
+      -webkit-animation-timing-function: linear;
+      animation-timing-function: linear;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+      -webkit-animation-play-state: running;
+      animation-play-state: running;
+    }
+
+    .strain:nth-child(1),
+    .strain:nth-child(1):before,
+    .strain:nth-child(1):after {
+      -webkit-animation-delay: 0.15s;
+      animation-delay: 0.15s;
+    }
+
+    .strain:nth-child(2),
+    .strain:nth-child(2):before,
+    .strain:nth-child(2):after {
+      -webkit-animation-delay: 0.3s;
+      animation-delay: 0.3s;
+    }
+
+    .strain:nth-child(3),
+    .strain:nth-child(3):before,
+    .strain:nth-child(3):after {
+      -webkit-animation-delay: 0.45s;
+      animation-delay: 0.45s;
+    }
+
+    .strain:nth-child(4),
+    .strain:nth-child(4):before,
+    .strain:nth-child(4):after {
+      -webkit-animation-delay: 0.6s;
+      animation-delay: 0.6s;
+    }
+
+    .strain:nth-child(5),
+    .strain:nth-child(5):before,
+    .strain:nth-child(5):after {
+      -webkit-animation-delay: 0.75s;
+      animation-delay: 0.75s;
+    }
+
+    .strain:nth-child(6),
+    .strain:nth-child(6):before,
+    .strain:nth-child(6):after {
+      -webkit-animation-delay: 0.9s;
+      animation-delay: 0.9s;
+    }
+
+    .strain:nth-child(7),
+    .strain:nth-child(7):before,
+    .strain:nth-child(7):after {
+      -webkit-animation-delay: 1.05s;
+      animation-delay: 1.05s;
+    }
+
+    .strain:nth-child(8),
+    .strain:nth-child(8):before,
+    .strain:nth-child(8):after {
+      -webkit-animation-delay: 1.2s;
+      animation-delay: 1.2s;
+    }
+
+    .strain:nth-child(9),
+    .strain:nth-child(9):before,
+    .strain:nth-child(9):after {
+      -webkit-animation-delay: 1.35s;
+      animation-delay: 1.35s;
+    }
+
+    .strain:nth-child(10),
+    .strain:nth-child(10):before,
+    .strain:nth-child(10):after {
+      -webkit-animation-delay: 1.5s;
+      animation-delay: 1.5s;
+    }
+
+    .strain:nth-child(11),
+    .strain:nth-child(11):before,
+    .strain:nth-child(11):after {
+      -webkit-animation-delay: 1.65s;
+      animation-delay: 1.65s;
+    }
+
+    .strain:nth-child(12),
+    .strain:nth-child(12):before,
+    .strain:nth-child(12):after {
+      -webkit-animation-delay: 1.8s;
+      animation-delay: 1.8s;
+    }
+
+    @-webkit-keyframes rotate-strain {
+      0% {
+        width: 155px;
+      }
+
+      25% {
+        width: 0;
+      }
+
+      50% {
+        width: 155px;
+      }
+
+      75% {
+        width: 0;
+      }
+
+      100% {
+        width: 155px;
+      }
+    }
+
+    @keyframes rotate-strain {
+      0% {
+        width: 155px;
+      }
+
+      25% {
+        width: 0;
+      }
+
+      50% {
+        width: 155px;
+      }
+
+      75% {
+        width: 0;
+      }
+
+      100% {
+        width: 155px;
+      }
+    }
+
+    @-webkit-keyframes strain-size-left {
+      0% {
+        transform: scale(1) translateX(0px);
+      }
+
+      25% {
+        transform: scale(0.5);
+      }
+
+      50% {
+        transform: scale(1) translateX(155px);
+      }
+
+      75% {
+        transform: scale(1.5);
+      }
+
+      100% {
+        transform: scale(1) translateX(0px);
+      }
+    }
+
+    @keyframes strain-size-left {
+      0% {
+        transform: scale(1) translateX(0px);
+      }
+
+      25% {
+        transform: scale(0.5);
+      }
+
+      50% {
+        transform: scale(1) translateX(155px);
+      }
+
+      75% {
+        transform: scale(1.5);
+      }
+
+      100% {
+        transform: scale(1) translateX(0px);
+      }
+    }
+
+    @-webkit-keyframes strain-size-right {
+      0% {
+        transform: scale(1) translateX(0px);
+      }
+
+      25% {
+        transform: scale(1.5);
+      }
+
+      50% {
+        transform: scale(1) translateX(-155px);
+      }
+
+      75% {
+        transform: scale(0.5);
+      }
+
+      100% {
+        transform: scale(1) translateX(0px);
+      }
+    }
+
+    @keyframes strain-size-right {
+      0% {
+        transform: scale(1) translateX(0px);
+      }
+
+      25% {
+        transform: scale(1.5);
+      }
+
+      50% {
+        transform: scale(1) translateX(-155px);
+      }
+
+      75% {
+        transform: scale(0.5);
+      }
+
+      100% {
+        transform: scale(1) translateX(0px);
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="favicon.ico">
+</head>
+
+<body>
+  <div class="top-container">
+    <img class="top-cloud" src="images/cloud.png" alt="cloud-img">
+    <h1>I am Abhishek</h1>
+    <h2>a <span class="pro">pro</span>grammeer </h2>
+    <img class="bottom-cloud" src="images/cloud.png" alt="claud-img">
+    <img src="images/mountain.png" alt="mountain-img">
+  </div>
+  <div class="middle-container">
+    <div class="profile">
+      <img src="images/abh.jpg" alt="abhi.img">
+      <h2>Hello</h2>
+      <p class="intro">I am fullstack webdeveloper & Game developer</p>
+    </div>
+    <hr>
+  </div>
+  <div class="skills">
+    <h2>My Skills</h2>
+    <div class="skill-row">
+      <img class="computer" src="images/computer.png" alt="computer.img">
+      <h3>Data Eantry Operater</h3>
+      <p> Data modelling.
+        Data management.
+        Data analytics.
+        Statistics.
+        Backup and recovery.
+        Microsoft Excel and Google Sheets.
+        XML database management.
+        MATLAB.</p>
+    </div>
+    <div class="skill-row">
+      <img class="chill" src="images/chillies.png" alt="chhillies.img">
+      <h3>What is the hobby of eating called..?</h3>
+      <p>If you are the kind of person who loves to cook and spend time in the kitchen, baking may be your next favorite
+        food hobby.</p>
+    </div>
+
+    <div class="skill-row">
+      <header>
+        <div class="strain"></div>
+        <div class="strain"></div>
+        <div class="strain"></div>
+        <div class="strain"></div>
+        <div class="strain"></div>
+        <div class="strain"></div>
+        <div class="strain"></div>
+        <div class="strain"></div>
+        <div class="strain"></div>
+        <div class="strain"></div>
+        <div class="strain"></div>
+        <div class="strain"></div>
+      </header>
+
+      <h3>❤️This is my first Unique animation❤️ </h3>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error, nemo. Consequatur reiciendis est eos id.</p>
+    </div>
+    <hr>
+    <div class="Contact-me">
+      <h2>Get In Touch</h2>
+      <h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+      <p class="Contact-msg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem nobis rerum distinctio
+        totam, eligendi debitis.
+      </p>
+      <br>
+      <br>
+      <br>
+      <a class="btn" href="7482812585">CONTACT ME</a>
+    </div>
+
+  </div>
+  <br>
+  <br>
+  <div class="bottom-container">
+    <a class="footer-link" href="https://www.linkedin.com">linkedin</a>
+    <a class="footer-link" href="https://www.twitter.com">twitter</a>
+    <a class="footer-link" href="https://www.youtube.com">youtube</a>
+    <a class="footer-link" href="https://www.instagram.com">instagram</a>
+    <p>2023 NAME MIDDILE SURNAME</p>
+    <p>ABHISHEK SINGH CHANDEL</p>
+  </div>
+</body>
+
+</html>
